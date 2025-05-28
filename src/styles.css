@@ -54,6 +54,7 @@ body {
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
+  font-weight: bold;
 }
 
 .square {
@@ -68,8 +69,13 @@ body {
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+   width: 34px;
   border-color: red;
+}
+
+.board {
+  left: 33.33vw;
+  position: absolute;
 }
 
 .board-row:after {
@@ -80,14 +86,4 @@ body {
 
 .status {
   margin-bottom: 10px;
-  border-style:double;
-  border-color: blue;
-}
-.game {
-  display: flex;
-  flex-direction: row;
-}
-
-.game-info {
-  margin-left: 20px;
 }
