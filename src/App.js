@@ -7,7 +7,14 @@ function Square({value, onSquareClick }) {
  export default function Board() {
   const [ xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
-  
+
+  function resetBoard() {
+    const nextSquares = squares.slice(); 
+    for (let i = 0; i < nextSquares.length; i++) {
+      nextSquares[i] = null;
+    }
+    setSquares(nextSquares);
+  }
 
   function handleClick(i) {
     if(squares[i] || calculateWinner(squares)){
@@ -74,6 +81,7 @@ function Square({value, onSquareClick }) {
         <Square value={squares[8]} onSquareClick ={() => handleClick(8)}/>
       </div>
     </div>
+    <div className="reset"><button  onClick={resetBoard} >Reset</button></div>
   </div>
   )
 }
