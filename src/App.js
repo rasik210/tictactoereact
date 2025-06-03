@@ -34,7 +34,7 @@ function Square({value, onSquareClick }) {
   } 
 
   function calculateWinner(squares){
-    // Entire board is saved in a one dimensional array named squares e.g. [X,X,X,O,X,O,X,O,O]
+    // Entire board is saved in a one dimensional array variable named squares e.g. [X,X,X,O,X,O,X,O,O]
     const winnerLines = [
       [0,1,2], //row 0
       [3,4,5], //row 1
