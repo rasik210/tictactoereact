@@ -1,6 +1,6 @@
 ### Namaste! 👋
 
-Here are the steps to follow to run this code in various environments:
+Here are the steps to be followed to run this code in various environments:
 
 - Run the code in Local development environment using Visual Studio(VS) Code:
     - Install Node.js from [here](https://nodejs.org/en/download). If you have already have Node.js installed on your machine then you can skip this step.
